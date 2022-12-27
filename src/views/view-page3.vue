@@ -21,7 +21,7 @@ export default {
       let formData = new FormData();
       formData.append("image", this.files);
       this.axios
-        .post("http://localhost:3000/api/v1/scanfile", formData, {
+        .post("http://203.151.199.181:2525/api/v1/scanfile", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },

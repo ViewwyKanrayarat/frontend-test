@@ -231,7 +231,7 @@ export default {
       this.axios
         // frontส่งข้อมูลไปback
         .get(
-          `http://localhost:3000/api/v1/anime`,
+          `http://203.151.199.181:2525/api/v1/anime`,
           {
             headers: {
               "Content-Type": "application/json",
@@ -261,7 +261,7 @@ export default {
       this.axios
         // frontส่งข้อมูลไปback
         .post(
-          `http://localhost:3000/api/v1/anime`,
+          `http://203.151.199.181:2525/api/v1/anime`,
           payload,
           {
             headers: {
@@ -288,7 +288,7 @@ export default {
         await this.axios
         // frontส่งข้อมูลไปback
         .delete(
-          `http://localhost:3000/api/v1/anime/${anime_ID}`,
+          `http://203.151.199.181:2525/api/v1/anime/${anime_ID}`,
           {
             headers: {
               "Content-Type": "application/json",

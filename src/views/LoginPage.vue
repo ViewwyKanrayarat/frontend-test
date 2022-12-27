@@ -31,7 +31,7 @@ export default {
         this.axios
         // frontส่งข้อมูลไปback
         .post(
-          `http://localhost:3000/api/v1/authenticate`,payload,{headers: {
+          `http://203.151.199.181:2525/api/v1/authenticate`,payload,{headers: {
             "Content-Type": "application/json",
           }}
         )

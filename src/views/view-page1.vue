@@ -296,7 +296,7 @@ export default {
       setTimeout(() => {
         this.axios
           // frontส่งข้อมูลไปback
-          .get(`http://localhost:3000/api/v1/data`, {
+          .get(`http://203.151.199.181:2525/api/v1/data`, {
             headers: {
               "Content-Type": "application/json",
               Authorization: this.$cookies.get("token"),
@@ -334,7 +334,7 @@ export default {
       this.$store.commit("updateloading", true);
       this.axios
         // frontส่งข้อมูลไปback
-        .post(`http://localhost:3000/api/v1/data`, payload, {
+        .post(`http://203.151.199.181:2525/api/v1/data`, payload, {
           headers: {
             "Content-Type": "application/json",
             // ดึงค่าจากคุกกี้ในเว็บ ใช้ get
@@ -365,7 +365,7 @@ export default {
       this.$store.commit("updateloading", true);
       this.axios
         .put(
-          `http://localhost:3000/api/v1/data/${this.editedItem.userID}`,
+          `http://203.151.199.181:2525/api/v1/data/${this.editedItem.userID}`,
           payload,
           {
             headers: {
@@ -389,7 +389,7 @@ export default {
       this.axios
         // frontส่งข้อมูลไปback
         .delete(
-          `http://localhost:3000/api/v1/data/${this.editedItem.userID}`,
+          `http://203.151.199.181:2525/api/v1/data/${this.editedItem.userID}`,
           {
             headers: {
               "Content-Type": "application/json",
